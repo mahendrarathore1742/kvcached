@@ -694,7 +694,6 @@ class ElasticBlockPoolPatch(VersionAwarePatch, BasePatch):
                     )
                 assert len(block_hashes) >= num_full_blocks, \
                     f"Request has {len(block_hashes)} hashes but need {num_full_blocks}"
-                )
 
                 for i, block in enumerate(new_full_blocks):
                     if (
